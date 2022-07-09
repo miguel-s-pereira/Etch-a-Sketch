@@ -1,0 +1,145 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgba(226, 255, 255, 0.3);
+}
+#container{
+    text-align: center;
+}
+.grid-size-option{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+}
+#user-input{
+    margin: 20px;
+}
+.grid-size-button{
+    cursor: pointer;
+    border: none;
+    background-color: white;
+    color: rgb(78, 3, 3);
+    border: 2px solid rgb(78, 3, 3);
+    transition: 300ms;
+}
+.grid-size-button:hover{
+    border: none;
+    background-color: rgb(78, 3, 3);
+    color: white;
+    border: 2px solid rgb(78, 3, 3);
+    transition: 300ms;
+}
+.title{
+    font-size: 35px;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 25px;
+}
+.grid{
+    width: 650px;
+    height: 650px;
+    margin: 0 auto;
+    display: grid;
+    border: 1px solid rgba(51, 51, 51, 0.1);
+    box-shadow: rgba(63, 63, 63, 0.2) 0px 2px 8px 0px;
+    margin-bottom: 20px;
+}
+.buttons{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 45%;
+    margin: 0 auto;
+}
+button{
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+.square{
+    background-color: blue;
+}
+.reset-board{
+    margin-top: 20px;
+}
+#coloring{
+    padding-bottom: 10px;
+}
+#black-button{
+    cursor: pointer;
+    border: none;
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    transition: 300ms;
+}
+#black-button:hover{
+    border: none;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    transition: 300ms;
+}
+#erase-button{
+    cursor: pointer;
+    border: none;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    transition: 300ms;
+}
+#erase-button:hover{
+    border: none;
+    background-color: white;
+    color: rgb(170, 162, 52);
+    border: 2px solid rgb(170, 162, 52);
+    transition: 300ms;
+}
+#random-button{
+    cursor: pointer;
+    position: relative;
+    border: none;
+    color: black;
+    border: 2px solid transparent;
+    background: linear-gradient(rgb(255, 255, 255) 0 0) padding-box,
+    linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,154,0,1) 10%, rgba(208,222,33,1) 20%, rgba(79,220,74,1) 30%, rgba(63,218,216,1) 40%, rgba(47,201,226,1) 50%, rgba(28,127,238,1) 60%, rgba(95,21,242,1) 70%, rgba(186,12,248,1) 80%, rgba(251,7,217,1) 90%, rgba(255,0,0,1) 100%);
+    z-index: 1;
+}
+#random-button::after{
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    opacity: 0;
+    border: none;
+    background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,154,0,1) 10%, rgba(208,222,33,1) 20%, rgba(79,220,74,1) 30%, rgba(63,218,216,1) 40%, rgba(47,201,226,1) 50%, rgba(28,127,238,1) 60%, rgba(95,21,242,1) 70%, rgba(186,12,248,1) 80%, rgba(251,7,217,1) 90%, rgba(255,0,0,1) 100%);
+    border: 2px solid transparent;
+    transition: 300ms;
+    z-index: -1;
+}
+#random-button:hover::after{
+    opacity: 1;
+}
+#random-button:hover{
+    color: white;
+}
+#reset-button{
+    cursor: pointer;
+    border: none;
+    background-color: white;
+    color: rgb(37, 136, 202);
+    border: 2px solid rgb(37, 136, 202);
+    transition: 300ms;
+}
+#reset-button:hover{
+    border: none;
+    background-color: rgb(37, 136, 202);
+    color: white;
+    border: 2px solid rgb(37, 136, 202);
+    transition: 300ms;
+}
